@@ -19,7 +19,7 @@ class ClientArea {
   sendRequest() {
     Axios.post('https://clever-jones-db530b.netlify.com/.netlify/functions/secret-area', {
       password: this.field.value
-    }).then(reponse => {
+    }).then(response => {
       this.form.remove()
       this.contentArea.innerHTML = response.data
     }).catch(() => {
